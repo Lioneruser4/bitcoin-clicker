@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bitcoin Clicker</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-image: url('background.jpg'); /* Burada arka plan resmini belirtin */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        #ui {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+        }
+        #bitcoin-button {
+            padding: 20px;
+            font-size: 30px;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: white;
+        }
+        #score-board {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="ui">
+        <h1>Bitcoin Clicker</h1>
+        <button id="bitcoin-button">
+            <img src="bitcoin-logo.png" alt="Bitcoin" width="100" height="100"> <!-- Bitcoin logosunu buraya ekleyin -->
+        </button>
+        <div id="score-board">
+            <h2>Skor: <span id="score">0</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
